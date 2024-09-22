@@ -17,7 +17,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const json = JSON.parse(input);
-      const res = await axios.post('http://localhost:3009/bfhl', json);
+      const res = await axios.post('https://bajaj-fin-server.vercel.app/bfhl', json);
       setResponse(res.data);
       setError('');
     } catch (error) {
